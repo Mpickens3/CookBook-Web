@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="'viewport" content="width=device-width, initial - scale=1.0">
+        <title>Cook Book || My Fridge</title>
+        
+        
+        <!-- logo -->
+        <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+        <!-- normalize -->
+        <link rel="stylesheet" href="/static/style.css" />
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <!-- main css -->
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body> 
+        <!-- nav -->
+        <nav class="navbar">
+            <div class="nav-center">
+              <div class="nav-header">
+                <a href="/index" class="nav-logo">
+                  <img src="/static/image/cookbook.png" alt="My CookBook" />
+                </a>
+                <button class="nav-btn btn">
+                  <i class="fas fa-align-justify"></i>
+                </button>
+              </div>
+              <div class="nav-links">
+                <a href="/index" class="nav-link"> home </a>
+                <a href="/about" class="nav-link"> about </a>
+                <a href="/searchRecipes" class="nav-link"> search </a>
+                <a href="/Login" class="nav-link"> login </a>
+      
+                <div class="nav-link contact-link">
+                  <a href="contact.html" class="btn"> contact </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+           <!-- end of nav -->
+
+           {% block body %} {% endblock %}
+
+          <!-- footer -->
+          <footer class="page-footer">
+            <p>
+              &copy; <span id="date"></span>
+              <span class="footer-logo">CookBook || MyFridge</span> Built by
+              <a>Team 5</a>
+            </p>
+          </footer>
+            <script src="/static/app.js"></script>
+        </body>
+    </html>
