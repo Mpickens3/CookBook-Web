@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cook Book</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+
+        <button><a href="/Login">login</a></button>
+
+       <!-- This part of the code could be cleaned up  -->
+       <h1>Proteins</h1>
+       <form method = "GET" action = "/searchRecipes">
+           <input name = "ingredient" value = "chicken" type = "radio">
+           <label for = "chicken">Chicken</label><br>
+           <input name = "ingredient" value = "beef" type = "radio">
+           <label for = "beef">Beef</label><br>
+           <input name = "ingredient" value = "salmon" type = "radio">
+           <label for = "salmon">Salmon</label><br>
+           <input name = "ingredient" value = "pork" type = "radio">
+           <label for = "pork">Pork</label><br>
+           <input name = "ingredient" value = "shrimp" type = "radio">
+           <label for = "shrimp">Shrimp</label><br>
+           <input type = "submit" value="Submit">
+       </form>
+    </body>
+</html>
