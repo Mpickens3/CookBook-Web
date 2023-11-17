@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+    {% block body %}
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Login</h1>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- login -->
+      <form action="/Login" method = "POST">
+        <input name = "username" type = "text" placeholder="Enter Email/Username">
+        <input name = "password" type = "password" placeholder="Enter Password">
+        <input type ="submit">
+    </form>
+      <!-- end of login -->
+
+    <h2>{{msg}}</h2>
+  {% endblock %}

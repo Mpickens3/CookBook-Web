@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+    {% block body %} 
+
+    
+    <body>
+
+        <div class="page">
+            <header class="hero">
+                <div class="hero-container">
+                  <div class="hero-text">
+                    <h1>Cook Book</h1>
+                    <h4>My Fridge</h4>
+                  </div>
+                </div>
+              </header>
+        <ul>
+            {% for result in information %}
+                <h1>{{result.title}}</h1>
+                <img src ={{result.image}} alt = {{result.title}}>
+                <br><b>Ingredients</b>
+                <p value =  {{result.ingredients}}>{{result.ingredients}}</p>
+                <br><b>Summary</b><br>
+                {{result.summary}}
+                <br>
+                <br>
+                <b>Instructions</b>
+                <li>{{result.instructions}}</li>
+       
+            {% endfor %}
+        </ul> 
+        </div>
+
+        <button><a href="/searchRecipes">New Search</a></button>
+    
+
+    </body>
+    {% endblock %}
+
+<!--     <ul>
+        {% for result in information %}
+            <h1>{{result.title}}</h1>
+            <img src ={{result.image}} alt = {{result.title}}>
+            <br><b>Ingredients</b>
+            <p value =  {{result.ingredients}}>{{result.ingredients}}</p>
+            <br><b>Summary</b><br>
+            {{result.summary}}
+            <br>
+            <br>
+            <b>Instructions</b>
+            <li>{{result.instructions}}</li>
+   
+        {% endfor %}
+    </ul> 
+
+    <button><a href="/searchRecipes">New Search</a></button>
+ -->

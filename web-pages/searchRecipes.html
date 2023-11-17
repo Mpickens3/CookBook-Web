@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+    {% block body %}
+    <!-- main -->
+    <main class="page">
+        <!-- header -->
+        <header class="hero">
+          <div class="hero-container">
+            <div class="hero-text">
+              <h1>Cook Book</h1>
+              <h4>My Fridge</h4>
+            </div>
+          </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- searech recipes -->
+        <!-- ingredients container-->
+        <section class="ingredient-container">
+            <div class="protein-list">
+                <!-- <img src="static/image/protein.png" alt="Picture of some Proteins!!! XD"> -->
+                    <div class="p-radio">
+                        <form method = "GET" action = "/results">
+                            <!-- <img src="../static/image/protein2.jpg"/> -->
+                            <!-- <div class="protein-list">
+                                
+                                <h3>Protein</h3>
+                                <input name = "ingredient" value = "chicken" type = "radio">
+                                <label for = "chicken">Chicken</label><br>
+                                <input name = "ingredient" value = "beef" type = "radio">
+                                <label for = "beef">Beef</label><br>
+                                <input name = "ingredient" value = "salmon" type = "radio">
+                                <label for = "salmon">Salmon</label><br>
+                                <input name = "ingredient" value = "pork" type = "radio">
+                                <label for = "pork">Pork</label><br>
+                                <input name = "ingredient" value = "shrimp" type = "radio">
+                                <label for = "shrimp">Shrimp</label><br>
+                            </div> -->
+                            
+                 
+
+<!-- <div class="carb-list">
+                            <h3>Carb</h3>
+                            <input name = "options" value = "rice" type = "checkbox">
+                            <label for = "Rice">Rice</label><br>
+                            <input name = "options" value = "potatoe" type = "checkbox">
+                            <label for = "Potatoe">Potatoes</label><br>
+                            <input name = "options" value = "bread" type = "checkbox">
+                            <label for = "Bread">Bread</label><br> 
+                        </div>-->
+
+
+                                <div class = "grid"> 
+                                    <div><img src="../static/image/protein2.jpg"/></div>
+                                    <div><h3>Protein</h3>
+                                        <input name = "ingredient" value = "chicken" type = "radio">
+                                        <label for = "chicken">Chicken</label><br>
+                                        <input name = "ingredient" value = "beef" type = "radio">
+                                        <label for = "beef">Beef</label><br>
+                                        <input name = "ingredient" value = "salmon" type = "radio">
+                                        <label for = "salmon">Salmon</label><br>
+                                        <input name = "ingredient" value = "pork" type = "radio">
+                                        <label for = "pork">Pork</label><br>
+                                        <input name = "ingredient" value = "shrimp" type = "radio">
+                                        <label for = "shrimp">Shrimp</label><br>
+                                    </div>
+                                
+
+
+                                    <div><img src="../static/image/grain2.jpg"/></div>
+                                    <div><h3>Carb</h3>
+                                        <input name = "options" value = "rice" type = "checkbox">
+                                        <label for = "Rice">Rice</label><br>
+                                        <input name = "options" value = "potatoe" type = "checkbox">
+                                        <label for = "Potatoe">Potatoes</label><br>
+                                        <input name = "options" value = "bread" type = "checkbox">
+                                        <label for = "Bread">Bread</label><br> 
+                                    </div>
+                                
+                                    
+
+                                    
+                                     <div><img src="../static/image/veg.jpg"/></div>
+                                    <div><h3>Vegetables</h3>
+                                        <input name = "options" value = "Tomatoe" type = "checkbox">
+                                        <label for = "Tomatoe">Tomatoe</label><br>
+                                        <input name = "options" value = "Onion" type = "checkbox">
+                                        <label for = "Onion">Onion</label><br>
+                                        <input name = "options" value = "Carrot" type = "checkbox">
+                                        <label for = "Carrot">Carrot</label><br>
+                                    </div>
+                        
+
+                                </div>
+
+                            <input type = "submit" value="Submit">
+                        </form>
+                    </div>
+            </div>
+
+            <!-- <div class="fruit-list">
+                <img src="/static/image/cookbook.png">
+                    <h5>Fruit</h5>
+                    <div class="f-radio">
+                        <form method = "GET" action = "/searchRecipes">
+                 
+                            <input type = "submit" value="Submit">
+                        </form>
+                    </div>
+            </div> -->
+
+            <!-- <div class="vegetable-list">
+                <img src="/static/image/cookbook.png">
+                    <h5>Vegetable</h5>
+                    <div class="v-radio">
+                        <form method = "GET" action = "/searchRecipes">
+                           
+                            <input type = "submit" value="Submit">
+                        </form>
+                    </div>
+            </div>
+
+            <div class="grain-list">
+                <img src="/static/image/cookbook.png">
+                    <h5>Grain</h5>
+                    <div class="g-radio">
+                        <form method = "GET" action = "/searchRecipes">
+                            
+                            <input type = "submit" value="Submit">
+                        </form>
+                    </div>
+            </div> -->
+        </section>
+
+       
+        <!--- end of ingredients container-->
+        <!-- end of search recipes -->
+        {% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+  {% block body%}
+    <!-- main -->
+    <main class="page">
+        <!-- header -->
+        <header class="hero">
+          <div class="hero-container">
+            <div class="hero-text">
+              <h1>Cook Book</h1>
+              <h4>My Fridge</h4>
+            </div>
+          </div>
+        </header>
+        <!-- end of header -->
+        <!-- results -->
+        <ul>
+          {% for result in results %}
+            <a href="/recipe?recipeId={{result.id}}">
+                <li value = {{result.title}}>{{result.title}}</li>
+                <img src ={{result.image}} alt = {{result.title}}>
+                </a>
+          {% endfor  %}
+        </ul> 
+
+        <button><a href="/searchRecipes">New Search</a></button>
+        <!-- end of results-->
+{% endblock %}
